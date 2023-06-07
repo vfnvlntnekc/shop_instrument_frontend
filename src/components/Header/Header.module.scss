@@ -1,0 +1,79 @@
+.root {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px;
+    
+  }
+  
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding: 0; /*убираем левый отступ, равный 40px*/
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  }
+  
+  
+  
+  .link a {
+    position: relative;
+    color: #000000; /*задаём цвет ссылки*/
+    cursor: pointer;
+    text-decoration: none; /*убираем подчёркивание*/
+    
+  }
+  .link a:after {
+    
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #4361ee; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+  }
+  
+  .link a:hover:after, .link a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  }
+  
+  
+  .logo {
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+  
+  .buttons {
+    button {
+      margin-left: 10px;
+      background-color: #DCDCDC;
+      color: #000000;
+      border: 1px solid #4361ee;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  
